@@ -17,6 +17,12 @@
 2. Download the following files:
    * "Twitter" dataset, found in the folder **files** 
    * FastText word vectors (see link, needs to be reduced to 200 dimensions)
+    * ```python
+      model = fasttext.load_model('path to dataset')
+      fasttext.util.reduce_model(model, 200)
+      #test
+      model.get_dimension()
+      ```
    * GloVe word vectors (see link)
    * sentqs_dataset.npz link: https://cloud.fhws.de/index.php/s/8BwgMykHEf9BwAd
 2. Open the latest Notebook 
